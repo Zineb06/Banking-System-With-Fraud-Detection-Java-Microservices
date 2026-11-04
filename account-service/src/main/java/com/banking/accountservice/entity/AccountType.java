@@ -1,5 +1,8 @@
 package com.banking.accountservice.entity;
 
-public class AccountType {
+public enum AccountType {
+    SAVINGS,
+    CURRENT,
+    FIXED_DEPOSIT
 
 }

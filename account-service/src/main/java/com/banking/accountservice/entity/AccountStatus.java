@@ -1,5 +1,9 @@
 package com.banking.accountservice.entity;
 
-public class AccountStatus {
+// account lifecycle status
 
+public enum AccountStatus {
+    ACTIVE,
+    BLOCKED,
+    CLOSED
 }
