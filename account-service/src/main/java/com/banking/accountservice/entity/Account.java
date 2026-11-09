@@ -54,7 +54,7 @@ public class Account {
     private BigDecimal dailyTransactionLimit;
 
     @CreationTimestamp
-    private LocalDateTime createdAT;
+    private LocalDateTime createdAt;
 
     @UpdateTimestamp
     private LocalDateTime updatedAt;

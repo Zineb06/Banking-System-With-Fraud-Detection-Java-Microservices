@@ -6,6 +6,13 @@ import java.time.LocalDateTime;
 import com.banking.accountservice.entity.AccountStatus;
 import com.banking.accountservice.entity.AccountType;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class AccountResponse {
     private String id;
 
@@ -25,5 +32,5 @@ public class AccountResponse {
 
     private BigDecimal dailyTransactionLimit;
 
-    private LocalDateTime createdAT;
+    private LocalDateTime createdAt;
 }
