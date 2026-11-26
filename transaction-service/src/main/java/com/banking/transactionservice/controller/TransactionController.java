@@ -1,5 +1,7 @@
 package com.banking.transactionservice.controller;
 
+import java.util.List;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -38,7 +40,7 @@ public class TransactionController {
     }
 
     @GetMapping("/account/{accountNumber}")
-    public ResponseEntity<TransactionResponse> getTransactionHistory(@PathVariable String accountNumber) {
+    public ResponseEntity<List<TransactionResponse>> getTransactionHistory(@PathVariable String accountNumber) {
         return ResponseEntity.ok(transactionService.getTransactionHistory(accountNumber));
     }
 
